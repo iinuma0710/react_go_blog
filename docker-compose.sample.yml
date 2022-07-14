@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  golang:
+    image: golang:latest
+    container_name: golang_sample_container
+    volumes:
+      - ./articles/golang/samples:/go/src
+    tty: true
+    working_dir: /go/src
+
+  node:
+    image: node:latest
+    container_name: react_sample_container
+    volumes:
+      - ./articles/react/samples:/react/src
+    tty: true
+    working_dir: /react/src
