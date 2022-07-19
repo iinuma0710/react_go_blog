@@ -184,7 +184,37 @@ TSLint で利用可能なオプションは[ドキュメント](https://palantir
 今後は，ESLint + TypeScript プラグインを使うことが推奨となっています．
 
 ## 2.4 index.ts
+最後に，簡単なサンプルプログラムを動かしてみます．
+```chapter_02``` ディレクトリに，以下の構成でファイルを作成します．
 
+```
+chapter-2/
+├── node_modules/
+├── src/
+│　└── index.ts
+├── package.json
+├── tsconfig.json
+└── tslint.json
+```
+
+```src/index.ts``` の中身は，次の1行だけです．
+
+```ts
+console.log('Hello TypeScript!')
+```
+
+これをコンパイルして実行します．
+
+```bash
+# TypeScript コードを TSC でコンパイル
+$ ./node_modules/.bin/tsc
+
+# Node.js を使ってコードを実行
+$ node ./dist/index.js
+Hello TypeScript!
+```
+
+これで，動作確認ができました．
 
 ## 2.5 練習問題
 (省略)
