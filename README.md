@@ -38,3 +38,22 @@ $ docker-compose -f (起動する YAML ファイル) build --no-cache
 ```bash
 $ docker exec -it (コンテナ名) bash
 ```
+
+## TypeScript の実行環境を整える
+TypeScript のインタラクティブな実行に必要なパッケージをインストールする．
+
+```bash
+$ npm i -g typescript ts-node
+```
+
+対話形式で実行するには，次のコマンドを実行する．
+
+```bash
+$ npx ts-node
+```
+
+終了は以下のコマンド．
+
+```bash
+> .exit
+```

@@ -5,7 +5,7 @@ services:
     image: golang:latest
     container_name: golang_sample_container
     volumes:
-      - ./articles/golang/samples:/go/src
+      - ./samples/golang:/go/src
     tty: true
     working_dir: /go/src
 
@@ -13,6 +13,6 @@ services:
     image: node:latest
     container_name: react_sample_container
     volumes:
-      - ./articles/react/samples:/react/src
+      - ./samples/react:/react/
     tty: true
-    working_dir: /react/src
+    working_dir: /react
